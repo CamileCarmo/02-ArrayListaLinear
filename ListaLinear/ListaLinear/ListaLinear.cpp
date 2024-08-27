@@ -105,26 +105,26 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
-	if (nElementos == 0){
+	if (nElementos == 0) {
 		cout << " A lista está vazia";
 	}
 
 	else {
-		int c=0;
+		int c = 0;
 		int busca;
-		cout << "Digite um elemento";
+		cout << "Digite um elemento: ";
 		cin >> busca;
 		for (int n = 0; n < nElementos; n++) {
 			if (busca == lista[n]) {
-				cout << "o elemento foi encontrado na posicao" << n << endl;
+				cout << "o elemento foi encontrado na posicao: " << n << endl;
 				c++;
 			}
-			if (c == 0) {
 
-				cout << "o elemento nao esta na lista";
-			}
+		}if (c == 0) {
+
+			cout << "o elemento nao esta na lista";
+
 		}
 
 	}
-	
 }
